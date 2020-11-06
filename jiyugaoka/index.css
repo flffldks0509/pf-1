@@ -1,0 +1,154 @@
+html {
+    /* 영문이면 roboto가 적용되고, 한글이면 Noto Sans KR가 적용되도록 아래와 같은 순서로 배치 */
+    font-family: "Roboto", "Noto Sans KR", sans-serif;
+  }
+  
+  /* 노말라이즈 */
+  body, ul, li, h1, h2, h3, p {
+    margin:0;
+    padding:0;
+    list-style:none;
+  }
+  
+  a {
+    color:inherit;
+    text-decoration:none;
+  }
+  
+  label[for] {
+    cursor:pointer;
+    user-select:none;
+  }
+  
+  /*lib*/
+  .con {
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  .row::after {
+    content:"";
+    display:block;
+    clear:both;
+  }
+  
+  .cell {
+    float:left;
+    box-sizing:border-box;
+  }
+  
+  .img-box > img {
+    width:100%;
+    display:block;
+  }
+  
+  .border-red {
+    border:4px solid red;
+  }
+  
+  .border-pink {
+    border:4px solid pink;
+  }
+  
+  .border-blue {
+    border:4px solid blue;
+  }
+  
+  .border-green {
+    border:4px solid green;
+  }
+  
+  .border-black {
+    border:4px solid black;
+  }
+  
+  .border-gold {
+    border:4px solid gold;
+  }
+  
+  .flex {
+    display:flex;
+  }
+  
+  .flex-wrap {
+    flex-wrap:wrap;
+  }
+  
+  .flex-jc-e {
+    justify-content:flex-end;
+  }
+  
+  .flex-jc-s {
+    justify-content:flex-start;
+  }
+  
+  .flex-jc-c {
+    justify-content:center;
+  }
+  
+  .flex-jc-sb {
+    justify-content:space-between;
+  }
+  
+  .flex-ai-c {
+    align-items:center;
+  }
+  
+  .flex-as-c{
+    align-self:center;
+  }
+  
+  .flex-grow-1{
+    flex-grow:1;
+  }
+  
+  .height-100p {
+    height:100%;
+  }
+  
+  .block {
+    display:block;
+  }
+  .font-a {
+    font-family: 'Volkhov', serif;
+  }
+  /*cus*/
+  .con{
+    max-widthwidth:1200px;
+  }
+  .box-1{
+    padding:105px;
+  }
+  .box-1>.content-box>.title-box-1{
+    width:33%;
+  }
+  /*타이틀박스*/
+  .box-1>.content-box>.title-box-1>.main-title-1{
+    color: #999999;
+    font-size:16px;
+    font-weight:bold;
+    padding:10px 0;
+  }
+  .box-1>.content-box>.title-box-1>.main-title-2{
+    font-size:42px;
+    color:#333333;
+    padding-bottom:40px;
+    position:relative;
+  }
+  .box-1>.content-box>.title-box-1>.main-title-2::after{
+    content:"";
+    width:30px;
+    height:2px;
+    background-color:black;
+    bottom:0;
+    left:0;
+    position:absolute;
+  }
+  .box-1>.content-box>.title-box-1>.main-title-3{
+    color:#999999;
+    font-size:14px;
+    line-height:24px;
+    letter-spacing:0.5px;
+    margin-top:35px;
+  }
+  
